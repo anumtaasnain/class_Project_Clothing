@@ -3,11 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Product Detail</title>
+   <style>
+    /* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container for the product detail page */
+.product-detail-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 30px;
+    font-family: Arial, sans-serif;
+}
+
+/* Product image section */
+.product-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Product information section */
+.product-info {
+    max-width: 500px;
+    text-align: left;
+}
+
+/* Product title styling */
+.product-title {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Product description styling */
+.product-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Product price styling */
+.product-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2ecc71;
+}
+
+/* Button styling */
+.add-to-cart-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #2980b9;
+}
+
+   </style>
 </head>
 <body>
-    <h1>saad</h1>
-    <h1>assad</h1>
-    <h1>saadddddd</h1>
+    <div class="product-detail-container">
+        <div class="product-image">
+            <img src="KB24-129-_7_192fdae8-2e51-40a2-a6fd-c74762328d5d.jpg" alt="Product Image">
+        <div class="product-info">
+            <h1 class="product-title">Awesome Product Name</h1>
+            <p class="product-description">
+                This is a detailed description of the product. It explains the features and benefits of the product in a way that attracts the customer.
+            </p>
+            <p class="product-price">$99.99</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
 </body>
 </html>
