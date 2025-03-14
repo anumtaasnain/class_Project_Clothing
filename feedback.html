@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WWW.Feedback.com</title>
+    <link rel="shortcut icon" href="imges/download.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <style>
+        .h1{
+            margin: 20px 20px 20px 20px;
+            
+        }
+        h1{
+            padding-left: 40%;
+            padding:20px 20px 20px 40%;
+            font-family:initial;
+            background-color: dimgray;
+            color: darkcyan;
+            font-size: 40px;
+        }
+        .h2{
+            margin-left:20px ;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        .section{
+            margin: 20px 20px 20px 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 28px;
+        }
+        .container{
+           
+            background-color: darkgoldenrod;
+           
+        }
+        .main{
+            padding: 20px 50px 20px 30%;
+        }
+        #feedback{
+            width: 350px;
+            height: 150px;
+        }
+        #firstname,#lastname,#email,#number{
+            width: 350px;
+            height: 50px;
+            border-radius: 5%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="h1">
+        <u><h1>Giv as your Feedback</h1></u>
+    </div>
+    <div class="h2">
+        <h2>
+        <u> Your Feedback Matters to Us!</u>
+        </h2>
+    </div>
+
+    <div class="section">
+        <p>
+            We value your experience and believe your feedback is crucial for improving our services. Whether you have
+            suggestions, praise, or concerns, please share your thoughts with us. We will carefully review your feedback
+            and strive to make necessary improvements as quickly as possible.
+
+
+        </p>
+    </div>
+
+    <form action="">
+
+        <div class="container">
+            <div class="main">
+            <h2>Choose your option:</h2>
+
+
+            <label for="option1">
+                <input type="radio" id="option1" name="options" value="Option 1">
+                Comment
+            </label><br>
+
+            <label for="option2">
+                <input type="radio" id="option2" name="options" value="Option 2">
+                Suggestions
+            </label><br>
+
+            <label for="option3">
+                <input type="radio" id="option3" name="options" value="Option 3">
+                Question
+            </label><br>
+
+
+
+            <div class="small-container">
+                <label for="message">
+                    <h3>Describe Your Feedback *</h3>
+                </label><br>
+                <input type="text" name="" id="feedback">
+            </div>
+
+            <h3>Name</h3>
+            <div class="small-container">
+                <label for="name">First Name </label><br>
+                <input type="text" name="" id="firstname" pattern="^[A-Za-z\s]{3,50}$"><br><br>
+                <label for="name">Last Name</label><br>
+                <input type="text" name="" id="lastname" pattern="^[A-Za-z\s]{3,50}$">
+            </div>
+
+            <h3>Email</h3>
+            <div class="small-container">
+                <label for="email">Enter Your Email</label><br>
+                <input type="email" name="" id="email" pattern="^[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+            </div>
+
+
+            <h3>Phone Numbers</h3>
+            <div class="small-container">
+                <label for="number">Enter Your Phone Number</label><br>
+                <input type="number" name="" id="number">
+            </div><br>
+
+            <button onclick="submit()">Submit</button>
+        </div>
+        </div>
+    </form>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+
+</html>
